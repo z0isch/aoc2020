@@ -1,0 +1,84 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e2ee35466d028ddabcbd7f2962e541c55bc38ff3685f31b6f43e92427559a80c
+
+name:           aoc2020
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/githubuser/aoc2020#readme>
+homepage:       https://github.com/z0isch/aoc2020#readme
+bug-reports:    https://github.com/z0isch/aoc2020/issues
+author:         AJ Ruf
+maintainer:     z0isch@gmail.com
+copyright:      2020 AJ Ruf
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/z0isch/aoc2020
+
+library
+  exposed-modules:
+      Day1
+      Import
+      Run
+      Types
+      Util
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      src
+  default-extensions: BangPatterns DataKinds DeriveAnyClass DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies FlexibleContexts FlexibleInstances GADTs GeneralizedNewtypeDeriving LambdaCase MultiParamTypeClasses NoImplicitPrelude NoMonomorphismRestriction OverloadedStrings RankNTypes RecordWildCards ScopedTypeVariables StandaloneDeriving TypeApplications TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.11 && <10
+    , containers
+    , generic-lens
+    , lens
+    , rio >=0.1.12.0
+  default-language: Haskell2010
+
+executable aoc2020-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      app
+  default-extensions: BangPatterns DataKinds DeriveAnyClass DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies FlexibleContexts FlexibleInstances GADTs GeneralizedNewtypeDeriving LambdaCase MultiParamTypeClasses NoImplicitPrelude NoMonomorphismRestriction OverloadedStrings RankNTypes RecordWildCards ScopedTypeVariables StandaloneDeriving TypeApplications TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.11 && <10
+    , containers
+    , generic-lens
+    , lens
+    , optparse-simple
+    , rio >=0.1.12.0
+  default-language: Haskell2010
+
+test-suite aoc2020-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      UtilSpec
+      Paths_aoc2020
+  hs-source-dirs:
+      test
+  default-extensions: BangPatterns DataKinds DeriveAnyClass DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies FlexibleContexts FlexibleInstances GADTs GeneralizedNewtypeDeriving LambdaCase MultiParamTypeClasses NoImplicitPrelude NoMonomorphismRestriction OverloadedStrings RankNTypes RecordWildCards ScopedTypeVariables StandaloneDeriving TypeApplications TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.11 && <10
+    , containers
+    , generic-lens
+    , hspec
+    , lens
+    , rio >=0.1.12.0
+  default-language: Haskell2010
