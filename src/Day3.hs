@@ -37,7 +37,5 @@ isTree '#' = True
 isTree _ = False
 
 parseInput :: MonadIO f => f [[Bool]]
-parseInput =
-  fmap (Text.foldl' (\xs c -> xs ++ [isTree c]) [])
-    . Text.lines
-    <$> readFileUtf8 "./input/day3.txt"
+parseInput = fmap (Text.foldr ((:) . isTree) []) . Text.lines <$> readFileUtf8
+  "./input/day3.txt"
