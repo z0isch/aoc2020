@@ -25,6 +25,7 @@ dependencies:
   - lens
   - containers
   - megaparsec
+  - linear
 
 ghc-options:
   - -Wall

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6af569fc3cf57d9a9b6efa7813e4ca4fe1f521da4ce3484be2eb46060cad948a
+-- hash: b4565d2092e83916173c2a35e0b8825e472bde6dba35164a04225c93ea336ec8
 
 name:           aoc2020
 version:        0.1.0.0
@@ -28,6 +28,7 @@ library
   exposed-modules:
       Day1
       Day2
+      Day3
       Import
       Run
       Types
@@ -43,6 +44,7 @@ library
     , containers
     , generic-lens
     , lens
+    , linear
     , megaparsec
     , rio >=0.1.12.0
   default-language: Haskell2010
@@ -61,6 +63,7 @@ executable aoc2020-exe
     , containers
     , generic-lens
     , lens
+    , linear
     , megaparsec
     , optparse-simple
     , rio >=0.1.12.0
@@ -83,6 +86,7 @@ test-suite aoc2020-test
     , generic-lens
     , hspec
     , lens
+    , linear
     , megaparsec
     , rio >=0.1.12.0
   default-language: Haskell2010
