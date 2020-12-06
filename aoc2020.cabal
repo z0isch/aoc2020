@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f2738f6a313f1be4f633a5062bc422bc593b767979a18c3fc1e204554b6fbb7d
+-- hash: 98b17e112f277ef08fcf7c4c2a9e4e0f79ccb0036fe6e8393f874d90181f012b
 
 name:           aoc2020
 version:        0.1.0.0
@@ -31,6 +31,7 @@ library
       Day3
       Day4
       Day5
+      Day6
       Import
       Run
       Types
@@ -49,6 +50,7 @@ library
     , linear
     , megaparsec
     , rio >=0.1.12.0
+    , split
   default-language: Haskell2010
 
 executable aoc2020-exe
@@ -69,6 +71,7 @@ executable aoc2020-exe
     , megaparsec
     , optparse-simple
     , rio >=0.1.12.0
+    , split
   default-language: Haskell2010
 
 test-suite aoc2020-test
@@ -91,4 +94,5 @@ test-suite aoc2020-test
     , linear
     , megaparsec
     , rio >=0.1.12.0
+    , split
   default-language: Haskell2010
