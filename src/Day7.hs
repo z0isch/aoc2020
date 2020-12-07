@@ -37,8 +37,7 @@ bagSearch bag rules = go (bagsFitIn bag) mempty
 
 bagsInBag :: String -> BagRules -> Sum Int
 bagsInBag bag rules =
-  maybe mempty
-        (Map.foldMapWithKey (\b n -> Sum n <> ((n *) <$> bagsInBag b rules)))
+  foldMap (Map.foldMapWithKey (\b n -> Sum n <> ((n *) <$> bagsInBag b rules)))
     $ Map.lookup bag rules
 
 type Parser = Parsec Void Text
