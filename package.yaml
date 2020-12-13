@@ -27,6 +27,7 @@ dependencies:
   - megaparsec
   - linear
   - split
+  - sbv
 
 ghc-options:
   - -Wall
