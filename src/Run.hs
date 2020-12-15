@@ -5,9 +5,9 @@ where
 
 import           Import
 
-import           Day14
+import           Day15
 
 run :: RIO App ()
 run = do
   logInfo "We're inside the application!"
-  hPutBuilder stdout . fromString . (<> "\n") . show =<< part2
+  hPutBuilder stdout . fromString . (<> "\n") . show $ part2
