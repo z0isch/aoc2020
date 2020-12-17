@@ -16,12 +16,8 @@ part1 = solve . parseInput <$> readFileUtf8 "./input/day17.txt"
 
 part2 :: MonadIO f => f Int
 part2 =
-  solve
-    .   Set.fromList
-    .   fmap (\(V3 x y z) -> V4 x y z 0)
-    .   Set.toList
-    .   parseInput
-    <$> readFileUtf8 "./input/day17.txt"
+  solve . Set.map (\(V3 x y z) -> V4 x y z 0) . parseInput <$> readFileUtf8
+    "./input/day17.txt"
 
 solve :: (Ord (t Int), Traversable t) => Set (t Int) -> Int
 solve = length . List.head . List.drop 6 . List.iterate step
