@@ -5,7 +5,7 @@ where
 
 import           Import
 
-import           Day16
+import           Day17
 import qualified RIO.Text                      as T
 
 run :: RIO App ()

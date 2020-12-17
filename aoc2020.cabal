@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 204e569bbd64491f297baf3178e6f850947308f7a2e470d4e90835e9c9ea9970
+-- hash: 54539935b7f7e9df7b0d0e1b6032c726a951cd66c95ce7192c22023f7bf66592
 
 name:           aoc2020
 version:        0.1.0.0
@@ -34,6 +34,7 @@ library
       Day14
       Day15
       Day16
+      Day17
       Day2
       Day3
       Day4
