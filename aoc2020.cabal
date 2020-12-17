@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 605961fc5e990b91a85f067c53410c4c0dd50bc1104818792adda802a9bd3c3e
+-- hash: 204e569bbd64491f297baf3178e6f850947308f7a2e470d4e90835e9c9ea9970
 
 name:           aoc2020
 version:        0.1.0.0
@@ -33,6 +33,7 @@ library
       Day13
       Day14
       Day15
+      Day16
       Day2
       Day3
       Day4
@@ -58,6 +59,8 @@ library
     , lens
     , linear
     , megaparsec
+    , monad-loops
+    , monad-validate
     , rio >=0.1.12.0
     , sbv
     , split
@@ -79,6 +82,8 @@ executable aoc2020-exe
     , lens
     , linear
     , megaparsec
+    , monad-loops
+    , monad-validate
     , optparse-simple
     , rio >=0.1.12.0
     , sbv
@@ -104,6 +109,8 @@ test-suite aoc2020-test
     , lens
     , linear
     , megaparsec
+    , monad-loops
+    , monad-validate
     , rio >=0.1.12.0
     , sbv
     , split

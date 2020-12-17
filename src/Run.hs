@@ -5,9 +5,10 @@ where
 
 import           Import
 
-import           Day15
+import           Day16
+import qualified RIO.Text                      as T
 
 run :: RIO App ()
 run = do
   logInfo "We're inside the application!"
-  hPutBuilder stdout . fromString . (<> "\n") . show $ part2
+  hPutBuilder stdout . fromString . T.unpack . (<> "\n") . tshow =<< part2

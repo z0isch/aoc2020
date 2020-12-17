@@ -28,6 +28,8 @@ dependencies:
   - linear
   - split
   - sbv
+  - monad-validate
+  - monad-loops
 
 ghc-options:
   - -Wall

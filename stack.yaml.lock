@@ -5,6 +5,13 @@
 
 packages:
 - completed:
+    hackage: monad-validate-1.2.0.0@sha256:9850f408431098b28806dd464b6825a88a0b56c84f380d7fe0454c1df9d6f881,3505
+    pantry-tree:
+      size: 713
+      sha256: 8e049bd12ce2bd470909578f2ee8eb80b89d5ff88860afa30e29dd4eafecfa3e
+  original:
+    hackage: monad-validate-1.2.0.0@sha256:9850f408431098b28806dd464b6825a88a0b56c84f380d7fe0454c1df9d6f881,3505
+- completed:
     hackage: sbv-8.9@sha256:efb0f16c671869805e57d11e269793d5e5ae512e8e626582cf76b8e46a63e9c6,28985
     pantry-tree:
       size: 62515
