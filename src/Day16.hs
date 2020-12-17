@@ -62,21 +62,6 @@ permStep TicketPerm {..} =
         , ticketsPossible = Set.insert (rName, field) ticketsPossible
         }
 
-wholeTicketSat :: Map Text [(Int, Int)] -> Map Int Int -> [[Int]]
-wholeTicketSat rules ticket =
-  mapMaybe
-      (\t ->
-        if and
-           $ zipWith (\(_, n) (_, ranges) -> n `inRange` ranges) t
-           $ Map.toList rules
-        then
-          Just $ map fst t
-        else
-          Nothing
-      )
-    $ List.permutations
-    $ Map.toList ticket
-
 validTickets :: TicketInput -> TicketInput
 validTickets t =
   t { tickets = filter (all (\i -> any (inRange i) $ rules t)) $ tickets t }
