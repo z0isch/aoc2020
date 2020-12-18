@@ -30,6 +30,7 @@ dependencies:
   - sbv
   - monad-validate
   - monad-loops
+  - parsec
 
 ghc-options:
   - -Wall
